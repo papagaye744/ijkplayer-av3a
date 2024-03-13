@@ -53,6 +53,7 @@ publishing {
         gpr(MavenPublication) {
             groupId = 'io.github.papagaye744'
             artifactId = 'ijkplayer-av3a-exo'
+            version = '1.0.0'
         }
     }
 }
