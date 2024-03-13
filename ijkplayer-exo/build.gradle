@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.library'
-    id 'maven-publish'
 }
+
+apply plugin: "maven-publish"
 
 android {
     namespace 'tv.danmaku.ijk.media.exo'
@@ -50,7 +51,8 @@ publishing {
     }
     publications {
         gpr(MavenPublication) {
-            from(components.java)
+            groupId = 'io.github.papagaye744'
+            artifactId = 'ijkplayer-av3a-exo'
         }
     }
 }
